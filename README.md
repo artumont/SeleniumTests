@@ -1,4 +1,4 @@
-# SeleniumTests
+# 🔬 SeleniumTests
 
 A web application designed to help developers practice and improve their Selenium testing skills through various interactive test scenarios.
 
