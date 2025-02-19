@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SeleniumTests - Practice Your Testing Skills</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home/styles.css') }}">
+    <script src="{{ url_for('static', filename='home/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>SeleniumTests</h1>
+        <p>Enhance your Selenium testing skills through interactive scenarios</p>
+    </header>
+    
+    <main>
+        <section class="cards">
+            <div class="card" data-href="/ecommerce_test">
+                <h2>E-commerce Testing</h2>
+                <p>Practice testing shopping cart functionality, product listings, and checkout flows.</p>
+                <ul>
+                    <li>Shopping cart interactions</li>
+                    <li>Product selection testing</li>
+                    <li>Checkout process validation</li>
+                </ul>
+                <div class="cta">Try E-commerce Tests →</div>
+            </div>
+
+            <div class="card" data-href="/account_test">
+                <h2>Account Testing</h2>
+                <p>Master testing user authentication and account management features.</p>
+                <ul>
+                    <li>Login form validation</li>
+                    <li>Registration flow testing</li>
+                    <li>Profile management tests</li>
+                </ul>
+                <div class="cta">Try Account Tests →</div>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Choose a testing scenario above</li>
+                <li>Write Selenium tests using the provided templates</li>
+                <li>Run your tests and validate your implementation</li>
+                <li>Check solutions for learning and improvement</li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>

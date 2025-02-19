@@ -8,6 +8,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
+    background-color: #1e2021;
+    color: white;
 }
 
 header {
@@ -40,7 +42,7 @@ header {
 }
 
 .product {
-    border: 1px solid #ddd;
+    background-color: #272b2d;
     padding: 15px;
     text-align: center;
     border-radius: 8px;
@@ -49,17 +51,18 @@ header {
 .product img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
 .price {
-    color: #2c3e50;
+    color: #6590bc;
     font-weight: bold;
     margin: 10px 0;
 }
 
 button {
-    background-color: #3498db;
+    background-color: #297fb7;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -69,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #20608b;
 }
 
 .hidden {
@@ -77,7 +80,7 @@ button:hover {
 }
 
 #cart {
-    background-color: #f9f9f9;
+    background-color: #272b2d;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -98,7 +101,7 @@ button:hover {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #272b2d;
     border-radius: 8px;
 }
 
@@ -116,8 +119,9 @@ button:hover {
 .form-group textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #3b3b3b;
     border-radius: 4px;
+    background-color: #222222;
 }
 
 .form-row {
