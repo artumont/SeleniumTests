@@ -121,6 +121,7 @@ button:hover {
     padding: 8px;
     border: 1px solid #3b3b3b;
     border-radius: 4px;
+    color: white;
     background-color: #222222;
 }
 
