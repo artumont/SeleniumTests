@@ -8,7 +8,7 @@ A web application designed to help developers practice and improve their Seleniu
 - **E-commerce Test**: Practice testing shopping cart functionality
 - **Account Test**: Practice testing user authentication flows
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 ├── src/
@@ -26,7 +26,7 @@ A web application designed to help developers practice and improve their Seleniu
     └── ecommerce/         # E-commerce testing exercises
 ```
 
-## 🧰 Setup
+## 🔧 Setup
 
 1. Ensure you have Python installed on your system
 2. Install dependencies:
