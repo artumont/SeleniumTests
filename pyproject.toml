@@ -1,0 +1,15 @@
+[project]
+name = "SeleniumTests"
+version = "1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "artumont", email = "197291181+artumont@users.noreply.github.com"},
+]
+dependencies = ["flask>=3.1.0", "selenium>=4.28.1"]
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
