@@ -12,16 +12,63 @@ body {
     color: white;
 }
 
-header {
+main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    height: 100vh;
 }
 
-.register-form {
-    max-width: 500px;
-    margin: 0 auto;
+.hidden {
+    display: none;
+}
+
+.account-form {
+    background-color: #272b2d;
+    padding: 15px;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 500px;
+    border-radius: 8px;
+}
+
+.account-form h2 {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.account-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #3b3b3b;
+    border-radius: 4px;
+    color: white;
+    background-color: #222222;
+    margin-bottom: 10px;
+}
+
+.account-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6590bc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.account-form button:hover {
+    background-color: #4d7aa0;
+}
+
+.account-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.account-form a {
+    color: #6590bc;
+    text-decoration: none;
 }

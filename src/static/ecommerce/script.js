@@ -117,8 +117,7 @@ function setupCheckoutButton() {
 function setupPaymentForm() {
     document.getElementById('payment-form').addEventListener('submit', (e) => {
         e.preventDefault();
-        
-        // Validate form
+
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const address = document.getElementById('address').value;
@@ -130,15 +129,12 @@ function setupPaymentForm() {
             return;
         }
 
-        // Process order
         const orderNumber = generateOrderNumber();
         document.getElementById('order-number').textContent = orderNumber;
         
-        // Show confirmation
         document.getElementById('checkout-form').classList.add('hidden');
         document.getElementById('order-confirmation').classList.remove('hidden');
-        
-        // Clear cart
+
         cart = [];
         updateCartCount();
     });

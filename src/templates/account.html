@@ -2,30 +2,56 @@
 <html>
 <head>
     <title>Account Test Site</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='account/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='account/style.css') }}">
     <script src="{{ url_for('static', filename='account/script.js') }}"></script>
 </head>
 <body>
     <main>
-        <section class="register-form">
-            <h2>Register</h2>
-            <form id="register-form">
+        <section id="login-section" class="account-form">
+            <h2>Login</h2>
+            <form id="login-form">
                 <div class="form-group">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group
-                ">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="text" id="login-username" name="username" required>
                 </div>
                 <div class="form-group
                 ">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="login-password" name="password" required>
                 </div>
-                <button id="register-btn">Register</button>
+                <p>Don't have an account? <a href="#" id="login-switch" onclick="switchForm(); return false;">Register here</a></p>
+                <button type="submit" id="login-btn">Login</button>
             </form>
+        </section>
+
+        <section id="register-section" class="account-form hidden">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="register-username" name="username" required>
+                </div>
+                <div class="form-group
+                ">
+                    <label for="email">Email:</label>
+                    <input type="email" id="register-email" name="email" required>
+                </div>
+                <div class="form-group
+                ">
+                    <label for="password">Password:</label>
+                    <input type="password" id="register-password" name="password" required>
+                </div>
+                <p>Already have an account? <a href="#" id="register-switch" onclick="switchForm(); return false;">Login here</a></p>
+                <button type="submit" id="register-btn">Register</button>
+            </form>
+        </section>
+
+        <section id="account-details" class="account-form hidden">
+            <h2>Account Details</h2>
+            <p>Username: <span id="username"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Password: <span id="password"></span></p>
+            <button onclick="logout()" id="logout-btn">Logout</button>
         </section>
     </main>
 </body>
