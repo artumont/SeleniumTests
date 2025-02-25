@@ -55,7 +55,7 @@ The `/tests` directory contains separate sections for different testing scenario
    pdm run python tests/[section]/main.py
    ```
 
-For more detailed information about each testing scenario, visit the corresponding sections on the website.
+For more detailed information about each testing scenario, visit the corresponding script on the folder.
 
 ## 🤝 Contributing 
 
